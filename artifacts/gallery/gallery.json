@@ -1,466 +1,466 @@
 [
   {
-    "clip_id": "01-01-01-01-02-02-08",
+    "clip_id": "01-01-01-01-02-02-19",
     "true_emotion": "neutral",
     "predicted_emotion": "neutral",
-    "confidence": 0.8648,
+    "confidence": 0.9891,
     "correct": true,
     "modality_predictions": {
       "video": {
         "emotion": "neutral",
-        "confidence": 0.429809033870697,
+        "confidence": 0.9220619797706604,
         "probabilities": {
-          "neutral": 0.429809033870697,
-          "calm": 0.16605275869369507,
-          "happy": 0.03233887255191803,
-          "sad": 0.054740164428949356,
-          "angry": 0.11525233089923859,
-          "fearful": 0.027703389525413513,
-          "disgust": 0.009974321350455284,
-          "surprised": 0.16412916779518127
+          "neutral": 0.9220619797706604,
+          "calm": 0.01741028018295765,
+          "happy": 0.0027272349689155817,
+          "sad": 0.0059526716358959675,
+          "angry": 0.01876653917133808,
+          "fearful": 0.0006187257822602987,
+          "disgust": 0.0006113320123404264,
+          "surprised": 0.031851235777139664
         }
       },
       "audio": {
         "emotion": "neutral",
-        "confidence": 0.5872156620025635,
+        "confidence": 0.43928343057632446,
         "probabilities": {
-          "neutral": 0.5872156620025635,
-          "calm": 0.08101775497198105,
-          "happy": 0.03936581686139107,
-          "sad": 0.0975727066397667,
-          "angry": 0.010547919198870659,
-          "fearful": 0.02556442841887474,
-          "disgust": 0.1240929588675499,
-          "surprised": 0.03462279215455055
+          "neutral": 0.43928343057632446,
+          "calm": 0.20000337064266205,
+          "happy": 0.008778882212936878,
+          "sad": 0.3322595953941345,
+          "angry": 0.0004689290071837604,
+          "fearful": 0.0024122796021401882,
+          "disgust": 0.010237419046461582,
+          "surprised": 0.006556033156812191
         }
       },
       "text": {
         "emotion": "calm",
-        "confidence": 0.15305906534194946,
+        "confidence": 0.13193756341934204,
         "probabilities": {
-          "neutral": 0.11516512185335159,
-          "calm": 0.15305906534194946,
-          "happy": 0.12108407914638519,
-          "sad": 0.10269761830568314,
-          "angry": 0.10656262189149857,
-          "fearful": 0.1135949119925499,
-          "disgust": 0.1491430252790451,
-          "surprised": 0.13869360089302063
+          "neutral": 0.12028586864471436,
+          "calm": 0.13193756341934204,
+          "happy": 0.12181098759174347,
+          "sad": 0.12190931290388107,
+          "angry": 0.13172781467437744,
+          "fearful": 0.11768357455730438,
+          "disgust": 0.12341141700744629,
+          "surprised": 0.13123343884944916
         }
       }
     },
     "contributions": {
-      "video": 0.3079,
-      "audio": 0.6126,
-      "text": 0.0038
+      "video": 0.7056,
+      "audio": 0.1765,
+      "text": 0.0007
     },
     "transcript": "Dogs are sitting by the door.",
-    "thumbnail": "/api/artifacts/gallery/01-01-01-01-02-02-08.jpg"
+    "thumbnail": "/api/artifacts/gallery/01-01-01-01-02-02-19.jpg"
   },
   {
-    "clip_id": "01-01-02-01-02-02-09",
+    "clip_id": "01-01-02-02-02-01-03",
     "true_emotion": "calm",
     "predicted_emotion": "calm",
-    "confidence": 0.4123,
+    "confidence": 0.7487,
     "correct": true,
     "modality_predictions": {
       "video": {
         "emotion": "calm",
-        "confidence": 0.2560356855392456,
+        "confidence": 0.9063928723335266,
         "probabilities": {
-          "neutral": 0.0924089178442955,
-          "calm": 0.2560356855392456,
-          "happy": 0.19910091161727905,
-          "sad": 0.12589925527572632,
-          "angry": 0.06594166159629822,
-          "fearful": 0.12855513393878937,
-          "disgust": 0.01758788898587227,
-          "surprised": 0.11447055637836456
+          "neutral": 0.01369361113756895,
+          "calm": 0.9063928723335266,
+          "happy": 0.015623238869011402,
+          "sad": 0.043302182108163834,
+          "angry": 0.0004174539353698492,
+          "fearful": 0.0012173345312476158,
+          "disgust": 0.0012450553476810455,
+          "surprised": 0.018108248710632324
         }
       },
       "audio": {
-        "emotion": "neutral",
-        "confidence": 0.35590866208076477,
+        "emotion": "disgust",
+        "confidence": 0.8329025506973267,
         "probabilities": {
-          "neutral": 0.35590866208076477,
-          "calm": 0.21527159214019775,
-          "happy": 0.037094127386808395,
-          "sad": 0.19593030214309692,
-          "angry": 0.010693839751183987,
-          "fearful": 0.04169245809316635,
-          "disgust": 0.10946555435657501,
-          "surprised": 0.03394337743520737
+          "neutral": 0.007980152033269405,
+          "calm": 0.026440149173140526,
+          "happy": 0.036621566861867905,
+          "sad": 0.05635305494070053,
+          "angry": 0.017174135893583298,
+          "fearful": 0.010709132999181747,
+          "disgust": 0.8329025506973267,
+          "surprised": 0.011819340288639069
         }
       },
       "text": {
-        "emotion": "fearful",
-        "confidence": 0.14980222284793854,
+        "emotion": "calm",
+        "confidence": 0.13193756341934204,
         "probabilities": {
-          "neutral": 0.1293276995420456,
-          "calm": 0.11305858939886093,
-          "happy": 0.13216504454612732,
-          "sad": 0.1329728066921234,
-          "angry": 0.11443102359771729,
-          "fearful": 0.14980222284793854,
-          "disgust": 0.11645041406154633,
-          "surprised": 0.11179219186306
+          "neutral": 0.12028586864471436,
+          "calm": 0.13193756341934204,
+          "happy": 0.12181098759174347,
+          "sad": 0.12190931290388107,
+          "angry": 0.13172781467437744,
+          "fearful": 0.11768357455730438,
+          "disgust": 0.12341141700744629,
+          "surprised": 0.13123343884944916
         }
       }
     },
     "contributions": {
-      "video": 0.0991,
-      "audio": 0.3172,
-      "text": -0.041
+      "video": 0.6854,
+      "audio": -0.0522,
+      "text": 0.0071
     },
-    "transcript": "The oxygen is sitting by the door.",
-    "thumbnail": "/api/artifacts/gallery/01-01-02-01-02-02-09.jpg"
+    "transcript": "Dogs are sitting by the door.",
+    "thumbnail": "/api/artifacts/gallery/01-01-02-02-02-01-03.jpg"
   },
   {
-    "clip_id": "01-01-03-01-01-01-02",
+    "clip_id": "01-01-03-02-02-02-07",
     "true_emotion": "happy",
     "predicted_emotion": "happy",
-    "confidence": 0.9845,
+    "confidence": 0.9919,
     "correct": true,
     "modality_predictions": {
       "video": {
         "emotion": "happy",
-        "confidence": 0.6786561608314514,
+        "confidence": 0.9763157963752747,
         "probabilities": {
-          "neutral": 0.11467183381319046,
-          "calm": 0.09474218636751175,
-          "happy": 0.6786561608314514,
-          "sad": 0.02045014128088951,
-          "angry": 0.038833096623420715,
-          "fearful": 0.017090745270252228,
-          "disgust": 0.01123080961406231,
-          "surprised": 0.02432502992451191
+          "neutral": 0.000648283923510462,
+          "calm": 0.01025729812681675,
+          "happy": 0.9763157963752747,
+          "sad": 0.0019248811295256019,
+          "angry": 0.003627821570262313,
+          "fearful": 0.002051481045782566,
+          "disgust": 0.003908352926373482,
+          "surprised": 0.0012660643551498652
         }
       },
       "audio": {
-        "emotion": "angry",
-        "confidence": 0.30754512548446655,
+        "emotion": "disgust",
+        "confidence": 0.5442256331443787,
         "probabilities": {
-          "neutral": 0.10950998216867447,
-          "calm": 0.021714266389608383,
-          "happy": 0.1690102368593216,
-          "sad": 0.05413249880075455,
-          "angry": 0.30754512548446655,
-          "fearful": 0.06582651287317276,
-          "disgust": 0.11564423888921738,
-          "surprised": 0.15661706030368805
+          "neutral": 0.0018517007119953632,
+          "calm": 0.006327952723950148,
+          "happy": 0.10891726613044739,
+          "sad": 0.022491803392767906,
+          "angry": 0.14806267619132996,
+          "fearful": 0.13495908677577972,
+          "disgust": 0.5442256331443787,
+          "surprised": 0.033163849264383316
         }
       },
       "text": {
-        "emotion": "neutral",
-        "confidence": 0.1459096223115921,
+        "emotion": "calm",
+        "confidence": 0.13193756341934204,
         "probabilities": {
-          "neutral": 0.1459096223115921,
-          "calm": 0.1156264916062355,
-          "happy": 0.13142338395118713,
-          "sad": 0.10828746855258942,
-          "angry": 0.1436670422554016,
-          "fearful": 0.11700762063264847,
-          "disgust": 0.11273389309644699,
-          "surprised": 0.12534449994564056
+          "neutral": 0.12028586864471436,
+          "calm": 0.13193756341934204,
+          "happy": 0.12181098759174347,
+          "sad": 0.12190931290388107,
+          "angry": 0.13172781467437744,
+          "fearful": 0.11768357455730438,
+          "disgust": 0.12341141700744629,
+          "surprised": 0.13123343884944916
         }
       }
     },
     "contributions": {
-      "video": 0.7892,
-      "audio": 0.2357,
-      "text": 0.0019
+      "video": 0.8908,
+      "audio": 0.0654,
+      "text": 0.0014
     },
-    "transcript": "Kids are talking by the door.",
-    "thumbnail": "/api/artifacts/gallery/01-01-03-01-01-01-02.jpg"
+    "transcript": "Dogs are sitting by the door.",
+    "thumbnail": "/api/artifacts/gallery/01-01-03-02-02-02-07.jpg"
   },
   {
-    "clip_id": "01-01-04-01-02-02-05",
+    "clip_id": "01-01-04-01-02-01-03",
     "true_emotion": "sad",
     "predicted_emotion": "sad",
-    "confidence": 0.4427,
+    "confidence": 0.5035,
     "correct": true,
     "modality_predictions": {
       "video": {
-        "emotion": "neutral",
-        "confidence": 0.3291577398777008,
-        "probabilities": {
-          "neutral": 0.3291577398777008,
-          "calm": 0.2142350822687149,
-          "happy": 0.0499926321208477,
-          "sad": 0.14121675491333008,
-          "angry": 0.06594403088092804,
-          "fearful": 0.11355627328157425,
-          "disgust": 0.0051271612755954266,
-          "surprised": 0.0807703360915184
-        }
-      },
-      "audio": {
         "emotion": "sad",
-        "confidence": 0.29960787296295166,
+        "confidence": 0.49602875113487244,
         "probabilities": {
-          "neutral": 0.21110984683036804,
-          "calm": 0.28408312797546387,
-          "happy": 0.04450878128409386,
-          "sad": 0.29960787296295166,
-          "angry": 0.015439826995134354,
-          "fearful": 0.032309431582689285,
-          "disgust": 0.06557316333055496,
-          "surprised": 0.047367971390485764
+          "neutral": 0.21814875304698944,
+          "calm": 0.13237449526786804,
+          "happy": 0.0065523297525942326,
+          "sad": 0.49602875113487244,
+          "angry": 0.007420334033668041,
+          "fearful": 0.017926985397934914,
+          "disgust": 0.007740909233689308,
+          "surprised": 0.11380747705698013
+        }
+      },
+      "audio": {
+        "emotion": "calm",
+        "confidence": 0.6387312412261963,
+        "probabilities": {
+          "neutral": 0.08388890326023102,
+          "calm": 0.6387312412261963,
+          "happy": 0.008503568358719349,
+          "sad": 0.19310854375362396,
+          "angry": 0.001254891394637525,
+          "fearful": 0.00434671388939023,
+          "disgust": 0.06665558367967606,
+          "surprised": 0.003510630689561367
         }
       },
       "text": {
         "emotion": "calm",
-        "confidence": 0.15305906534194946,
+        "confidence": 0.13193756341934204,
         "probabilities": {
-          "neutral": 0.11516512185335159,
-          "calm": 0.15305906534194946,
-          "happy": 0.12108407914638519,
-          "sad": 0.10269761830568314,
-          "angry": 0.10656262189149857,
-          "fearful": 0.1135949119925499,
-          "disgust": 0.1491430252790451,
-          "surprised": 0.13869360089302063
+          "neutral": 0.12028586864471436,
+          "calm": 0.13193756341934204,
+          "happy": 0.12181098759174347,
+          "sad": 0.12190931290388107,
+          "angry": 0.13172781467437744,
+          "fearful": 0.11768357455730438,
+          "disgust": 0.12341141700744629,
+          "surprised": 0.13123343884944916
         }
       }
     },
     "contributions": {
-      "video": 0.1071,
-      "audio": 0.3612,
-      "text": -0.0853
+      "video": 0.3054,
+      "audio": 0.0587,
+      "text": -0.0042
     },
     "transcript": "Dogs are sitting by the door.",
-    "thumbnail": "/api/artifacts/gallery/01-01-04-01-02-02-05.jpg"
+    "thumbnail": "/api/artifacts/gallery/01-01-04-01-02-01-03.jpg"
   },
   {
-    "clip_id": "01-01-05-01-01-02-06",
+    "clip_id": "01-01-05-01-01-01-09",
     "true_emotion": "angry",
-    "predicted_emotion": "angry",
-    "confidence": 0.6121,
-    "correct": true,
-    "modality_predictions": {
-      "video": {
-        "emotion": "angry",
-        "confidence": 0.44264060258865356,
-        "probabilities": {
-          "neutral": 0.07905728369951248,
-          "calm": 0.17537331581115723,
-          "happy": 0.0541168637573719,
-          "sad": 0.03143034130334854,
-          "angry": 0.44264060258865356,
-          "fearful": 0.07918716222047806,
-          "disgust": 0.044798966497182846,
-          "surprised": 0.0933954268693924
-        }
-      },
-      "audio": {
-        "emotion": "disgust",
-        "confidence": 0.2503097951412201,
-        "probabilities": {
-          "neutral": 0.10707347095012665,
-          "calm": 0.10025186091661453,
-          "happy": 0.10572229325771332,
-          "sad": 0.10964304953813553,
-          "angry": 0.10990750789642334,
-          "fearful": 0.09033277630805969,
-          "disgust": 0.2503097951412201,
-          "surprised": 0.12675926089286804
-        }
-      },
-      "text": {
-        "emotion": "neutral",
-        "confidence": 0.1459096223115921,
-        "probabilities": {
-          "neutral": 0.1459096223115921,
-          "calm": 0.1156264916062355,
-          "happy": 0.13142338395118713,
-          "sad": 0.10828746855258942,
-          "angry": 0.1436670422554016,
-          "fearful": 0.11700762063264847,
-          "disgust": 0.11273389309644699,
-          "surprised": 0.12534449994564056
-        }
-      }
-    },
-    "contributions": {
-      "video": 0.3642,
-      "audio": 0.1701,
-      "text": 0.0443
-    },
-    "transcript": "Kids are talking by the door.",
-    "thumbnail": "/api/artifacts/gallery/01-01-05-01-01-02-06.jpg"
-  },
-  {
-    "clip_id": "01-01-06-01-02-02-05",
-    "true_emotion": "fearful",
-    "predicted_emotion": "fearful",
-    "confidence": 0.5254,
-    "correct": true,
-    "modality_predictions": {
-      "video": {
-        "emotion": "calm",
-        "confidence": 0.205673947930336,
-        "probabilities": {
-          "neutral": 0.20036867260932922,
-          "calm": 0.205673947930336,
-          "happy": 0.04146391525864601,
-          "sad": 0.14101168513298035,
-          "angry": 0.11788831651210785,
-          "fearful": 0.15101943910121918,
-          "disgust": 0.009118384681642056,
-          "surprised": 0.13345561921596527
-        }
-      },
-      "audio": {
-        "emotion": "disgust",
-        "confidence": 0.28557342290878296,
-        "probabilities": {
-          "neutral": 0.12458179891109467,
-          "calm": 0.07744414359331131,
-          "happy": 0.12031662464141846,
-          "sad": 0.08241570740938187,
-          "angry": 0.08938870579004288,
-          "fearful": 0.1230022981762886,
-          "disgust": 0.28557342290878296,
-          "surprised": 0.09727730602025986
-        }
-      },
-      "text": {
-        "emotion": "calm",
-        "confidence": 0.15305906534194946,
-        "probabilities": {
-          "neutral": 0.11516512185335159,
-          "calm": 0.15305906534194946,
-          "happy": 0.12108407914638519,
-          "sad": 0.10269761830568314,
-          "angry": 0.10656262189149857,
-          "fearful": 0.1135949119925499,
-          "disgust": 0.1491430252790451,
-          "surprised": 0.13869360089302063
-        }
-      }
-    },
-    "contributions": {
-      "video": 0.4526,
-      "audio": 0.0052,
-      "text": -0.0353
-    },
-    "transcript": "Dogs are sitting by the door.",
-    "thumbnail": "/api/artifacts/gallery/01-01-06-01-02-02-05.jpg"
-  },
-  {
-    "clip_id": "01-01-07-01-02-01-03",
-    "true_emotion": "disgust",
-    "predicted_emotion": "disgust",
-    "confidence": 0.9433,
-    "correct": true,
-    "modality_predictions": {
-      "video": {
-        "emotion": "disgust",
-        "confidence": 0.7702446579933167,
-        "probabilities": {
-          "neutral": 0.0008452090551145375,
-          "calm": 0.011013937182724476,
-          "happy": 0.005324801430106163,
-          "sad": 0.11778818070888519,
-          "angry": 0.021610379219055176,
-          "fearful": 0.055727310478687286,
-          "disgust": 0.7702446579933167,
-          "surprised": 0.017445527017116547
-        }
-      },
-      "audio": {
-        "emotion": "disgust",
-        "confidence": 0.2825309634208679,
-        "probabilities": {
-          "neutral": 0.08471967279911041,
-          "calm": 0.16413655877113342,
-          "happy": 0.0600937083363533,
-          "sad": 0.1064058244228363,
-          "angry": 0.05334322899580002,
-          "fearful": 0.17797577381134033,
-          "disgust": 0.2825309634208679,
-          "surprised": 0.07079430669546127
-        }
-      },
-      "text": {
-        "emotion": "calm",
-        "confidence": 0.15305906534194946,
-        "probabilities": {
-          "neutral": 0.11516512185335159,
-          "calm": 0.15305906534194946,
-          "happy": 0.12108407914638519,
-          "sad": 0.10269761830568314,
-          "angry": 0.10656262189149857,
-          "fearful": 0.1135949119925499,
-          "disgust": 0.1491430252790451,
-          "surprised": 0.13869360089302063
-        }
-      }
-    },
-    "contributions": {
-      "video": 0.6115,
-      "audio": 0.1339,
-      "text": 0.0637
-    },
-    "transcript": "Dogs are sitting by the door.",
-    "thumbnail": "/api/artifacts/gallery/01-01-07-01-02-01-03.jpg"
-  },
-  {
-    "clip_id": "01-01-08-01-02-01-02",
-    "true_emotion": "surprised",
     "predicted_emotion": "surprised",
-    "confidence": 0.7919,
-    "correct": true,
+    "confidence": 0.908,
+    "correct": false,
     "modality_predictions": {
       "video": {
         "emotion": "surprised",
-        "confidence": 0.35236456990242004,
+        "confidence": 0.8315556049346924,
         "probabilities": {
-          "neutral": 0.10222815722227097,
-          "calm": 0.062380872666835785,
-          "happy": 0.0404348149895668,
-          "sad": 0.0708925649523735,
-          "angry": 0.22665716707706451,
-          "fearful": 0.11821135878562927,
-          "disgust": 0.026830503717064857,
-          "surprised": 0.35236456990242004
+          "neutral": 0.028087018057703972,
+          "calm": 0.0056668235920369625,
+          "happy": 0.004462220706045628,
+          "sad": 0.001982548274099827,
+          "angry": 0.09295962005853653,
+          "fearful": 0.033690664917230606,
+          "disgust": 0.0015955743147060275,
+          "surprised": 0.8315556049346924
         }
       },
       "audio": {
-        "emotion": "angry",
-        "confidence": 0.27277472615242004,
+        "emotion": "disgust",
+        "confidence": 0.6844242811203003,
         "probabilities": {
-          "neutral": 0.06629448384046555,
-          "calm": 0.030606796965003014,
-          "happy": 0.12080488353967667,
-          "sad": 0.04291832819581032,
-          "angry": 0.27277472615242004,
-          "fearful": 0.10555146634578705,
-          "disgust": 0.2119893729686737,
-          "surprised": 0.14905992150306702
+          "neutral": 0.03214586153626442,
+          "calm": 0.03564158454537392,
+          "happy": 0.04678299278020859,
+          "sad": 0.12241639196872711,
+          "angry": 0.026194024831056595,
+          "fearful": 0.007426882162690163,
+          "disgust": 0.6844242811203003,
+          "surprised": 0.04496798664331436
         }
       },
       "text": {
-        "emotion": "sad",
-        "confidence": 0.15565359592437744,
+        "emotion": "neutral",
+        "confidence": 0.13155078887939453,
         "probabilities": {
-          "neutral": 0.12772870063781738,
-          "calm": 0.11306095123291016,
-          "happy": 0.12564365565776825,
-          "sad": 0.15565359592437744,
-          "angry": 0.11101614683866501,
-          "fearful": 0.14878423511981964,
-          "disgust": 0.11376581341028214,
-          "surprised": 0.1043468713760376
+          "neutral": 0.13155078887939453,
+          "calm": 0.12575778365135193,
+          "happy": 0.12192966043949127,
+          "sad": 0.11901440471410751,
+          "angry": 0.12464381009340286,
+          "fearful": 0.12492889910936356,
+          "disgust": 0.12770959734916687,
+          "surprised": 0.12446508556604385
         }
       }
     },
     "contributions": {
-      "video": 0.6598,
-      "audio": 0.3427,
-      "text": -0.0119
+      "video": 0.7596,
+      "audio": 0.0628,
+      "text": 0.0085
     },
-    "transcript": "Toxic is sitting by the door.",
-    "thumbnail": "/api/artifacts/gallery/01-01-08-01-02-01-02.jpg"
+    "transcript": "Kids are talking by the door.",
+    "thumbnail": "/api/artifacts/gallery/01-01-05-01-01-01-09.jpg"
+  },
+  {
+    "clip_id": "01-01-06-01-01-01-07",
+    "true_emotion": "fearful",
+    "predicted_emotion": "fearful",
+    "confidence": 0.9541,
+    "correct": true,
+    "modality_predictions": {
+      "video": {
+        "emotion": "fearful",
+        "confidence": 0.5033116936683655,
+        "probabilities": {
+          "neutral": 0.032830458134412766,
+          "calm": 0.0053563304245471954,
+          "happy": 0.012368404306471348,
+          "sad": 0.10661307722330093,
+          "angry": 0.183497816324234,
+          "fearful": 0.5033116936683655,
+          "disgust": 0.012970338575541973,
+          "surprised": 0.1430519074201584
+        }
+      },
+      "audio": {
+        "emotion": "fearful",
+        "confidence": 0.5488027334213257,
+        "probabilities": {
+          "neutral": 0.00929150078445673,
+          "calm": 0.01721704564988613,
+          "happy": 0.14320088922977448,
+          "sad": 0.1520996391773224,
+          "angry": 0.00597924692556262,
+          "fearful": 0.5488027334213257,
+          "disgust": 0.08861618489027023,
+          "surprised": 0.03479277342557907
+        }
+      },
+      "text": {
+        "emotion": "neutral",
+        "confidence": 0.13155078887939453,
+        "probabilities": {
+          "neutral": 0.13155078887939453,
+          "calm": 0.12575778365135193,
+          "happy": 0.12192966043949127,
+          "sad": 0.11901440471410751,
+          "angry": 0.12464381009340286,
+          "fearful": 0.12492889910936356,
+          "disgust": 0.12770959734916687,
+          "surprised": 0.12446508556604385
+        }
+      }
+    },
+    "contributions": {
+      "video": 0.3102,
+      "audio": 0.3649,
+      "text": 0.0024
+    },
+    "transcript": "Kids are talking by the door.",
+    "thumbnail": "/api/artifacts/gallery/01-01-06-01-01-01-07.jpg"
+  },
+  {
+    "clip_id": "01-01-07-02-01-01-13",
+    "true_emotion": "disgust",
+    "predicted_emotion": "disgust",
+    "confidence": 0.9419,
+    "correct": true,
+    "modality_predictions": {
+      "video": {
+        "emotion": "disgust",
+        "confidence": 0.8888877630233765,
+        "probabilities": {
+          "neutral": 0.00037900832830928266,
+          "calm": 0.0006253059837035835,
+          "happy": 0.004319732543081045,
+          "sad": 0.014128370210528374,
+          "angry": 0.007971415296196938,
+          "fearful": 0.08257924020290375,
+          "disgust": 0.8888877630233765,
+          "surprised": 0.0011091246269643307
+        }
+      },
+      "audio": {
+        "emotion": "disgust",
+        "confidence": 0.34197184443473816,
+        "probabilities": {
+          "neutral": 0.0021912320517003536,
+          "calm": 0.00446391711011529,
+          "happy": 0.09652123600244522,
+          "sad": 0.013737344183027744,
+          "angry": 0.32078230381011963,
+          "fearful": 0.14886602759361267,
+          "disgust": 0.34197184443473816,
+          "surprised": 0.07146615535020828
+        }
+      },
+      "text": {
+        "emotion": "neutral",
+        "confidence": 0.13155078887939453,
+        "probabilities": {
+          "neutral": 0.13155078887939453,
+          "calm": 0.12575778365135193,
+          "happy": 0.12192966043949127,
+          "sad": 0.11901440471410751,
+          "angry": 0.12464381009340286,
+          "fearful": 0.12492889910936356,
+          "disgust": 0.12770959734916687,
+          "surprised": 0.12446508556604385
+        }
+      }
+    },
+    "contributions": {
+      "video": 0.8878,
+      "audio": -0.012,
+      "text": 0.0044
+    },
+    "transcript": "Kids are talking by the door.",
+    "thumbnail": "/api/artifacts/gallery/01-01-07-02-01-01-13.jpg"
+  },
+  {
+    "clip_id": "01-01-08-02-01-02-15",
+    "true_emotion": "surprised",
+    "predicted_emotion": "happy",
+    "confidence": 0.9212,
+    "correct": false,
+    "modality_predictions": {
+      "video": {
+        "emotion": "happy",
+        "confidence": 0.5933182835578918,
+        "probabilities": {
+          "neutral": 0.038046713918447495,
+          "calm": 0.2058451771736145,
+          "happy": 0.5933182835578918,
+          "sad": 0.029055368155241013,
+          "angry": 0.02045029029250145,
+          "fearful": 0.013761555776000023,
+          "disgust": 0.007534402888268232,
+          "surprised": 0.091988205909729
+        }
+      },
+      "audio": {
+        "emotion": "fearful",
+        "confidence": 0.607591986656189,
+        "probabilities": {
+          "neutral": 0.0020886610727757215,
+          "calm": 0.0022609648294746876,
+          "happy": 0.12401227653026581,
+          "sad": 0.012026294134557247,
+          "angry": 0.13632901012897491,
+          "fearful": 0.607591986656189,
+          "disgust": 0.046275489032268524,
+          "surprised": 0.06941524147987366
+        }
+      },
+      "text": {
+        "emotion": "fearful",
+        "confidence": 0.13017408549785614,
+        "probabilities": {
+          "neutral": 0.12243400514125824,
+          "calm": 0.12420765310525894,
+          "happy": 0.12376813590526581,
+          "sad": 0.1249895915389061,
+          "angry": 0.12181512266397476,
+          "fearful": 0.13017408549785614,
+          "disgust": 0.1270132213830948,
+          "surprised": 0.12559820711612701
+        }
+      }
+    },
+    "contributions": {
+      "video": 0.8233,
+      "audio": 0.1871,
+      "text": 0.0062
+    },
+    "transcript": "Kid, they're talking by the door.",
+    "thumbnail": "/api/artifacts/gallery/01-01-08-02-01-02-15.jpg"
   }
 ]

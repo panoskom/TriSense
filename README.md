@@ -80,15 +80,27 @@ batch size, epochs, mixed precision, and the `cuda`/`cpu` device flag.
 
 **Two training modes:**
 
-| | Phase one (this repo, CPU) | Phase two (your GPU) |
+| | Quick CPU path | Real GPU run **(committed)** |
 |---|---|---|
 | Encoders | frozen (LoRA off) | **LoRA on CLIP + wav2vec2** |
 | Trains | the 4 heads only | LoRA adapters + the 4 heads |
-| Why | finishes in minutes so the app runs end-to-end | the real fine-tuning run |
+| Why | finishes in minutes so the app runs end-to-end with no GPU | the real fine-tuning run that ships in this repo |
 | Command | `make train` | `make train-gpu` |
 
-The committed checkpoint is the quick CPU one. The code path for full LoRA training is
-implemented and tested; you run it on GPU in [Training](#training-phase-two-on-your-gpu).
+**The committed checkpoint is the real LoRA run** (rank 16/alpha 32 on both encoders,
+15 epochs, mixed precision on an RTX 2080 Ti). On a balanced 20-actor RAVDESS subset
+(336 train / 72 val / 72 test) it reaches:
+
+| Metric | Value |
+|---|---|
+| Fused test accuracy | **84.7%** (random baseline 12.5%) |
+| Macro-F1 | **0.85** |
+| Per-modality accuracy | video 77.8% · audio 52.8% · text 6.9% |
+| Fusion vs. best single modality | 84.7% ≥ 77.8% ✓ |
+
+LoRA clearly helps: versus a frozen-encoder baseline, the audio head jumps from ~35% to
+~53% (wav2vec2 adapters) and fused accuracy from ~79% to ~85%. The reproducible quick
+CPU path (`make train`) is still there for a no-GPU end-to-end run.
 
 ---
 
@@ -249,9 +261,10 @@ Training is a single reproducible command (`make train` / `make train-gpu`) that
   emotion. The text path is real and end-to-end (Whisper → MiniLM → head), but it mainly
   **proves the tri-modal pipeline** rather than adding strong signal. The leave-one-out
   chart usually shows this honestly: text contributes little.
-- **The committed checkpoint is the quick CPU one** — frozen encoders, heads only,
-  trained on a tiny balanced subset so the app runs end-to-end in minutes. It clears the
-  random baseline but is not the strong model; run `make train-gpu` for that.
+- **The committed checkpoint is the real LoRA run** (GPU, rank 16 on both encoders,
+  84.7% test accuracy — see [the table above](#the-method-lora-is-the-centerpiece)). A
+  frozen-encoder CPU checkpoint (`make train`) is also reproducible in minutes for a
+  no-GPU end-to-end run; it clears the baseline but is weaker.
 - **One person per clip**, frontal-ish face, short clip — that is the RAVDESS setting.
 
 ---

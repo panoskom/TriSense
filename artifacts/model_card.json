@@ -1,14 +1,14 @@
 {
   "checkpoint": "trisense.pt",
-  "trained_on": "RAVDESS speech AV subset \u2014 224 train / 48 val / 48 test clips, 8 emotions.",
-  "device": "cpu",
-  "num_test_clips": 48,
-  "test_accuracy": 0.7917,
-  "macro_f1": 0.7832,
+  "trained_on": "RAVDESS speech AV subset \u2014 336 train / 72 val / 72 test clips, 8 emotions.",
+  "device": "cuda",
+  "num_test_clips": 72,
+  "test_accuracy": 0.8472,
+  "macro_f1": 0.8485,
   "per_modality_accuracy": {
-    "video": 0.75,
-    "audio": 0.3542,
-    "text": 0.0208
+    "video": 0.7778,
+    "audio": 0.5278,
+    "text": 0.0694
   },
   "confusion_matrix": {
     "labels": [
@@ -23,9 +23,29 @@
     ],
     "matrix": [
       [
-        6,
+        8,
         0,
         0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        9,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        9,
         0,
         0,
         0,
@@ -34,41 +54,21 @@
       ],
       [
         1,
-        5,
         0,
         0,
+        7,
         0,
-        0,
+        1,
         0,
         0
       ],
       [
+        0,
+        0,
         0,
         0,
         6,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0,
-        0,
-        3,
-        0,
-        0,
-        3,
-        0
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
-        4,
-        0,
+        1,
         0,
         2
       ],
@@ -78,18 +78,8 @@
         0,
         0,
         0,
-        2,
+        9,
         0,
-        4
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        6,
         0
       ],
       [
@@ -98,7 +88,17 @@
         0,
         0,
         0,
+        2,
+        7,
+        0
+      ],
+      [
         0,
+        0,
+        2,
+        0,
+        0,
+        1,
         0,
         6
       ]
@@ -106,5 +106,5 @@
   },
   "confusion_matrix_image": "/api/artifacts/confusion_matrix.png",
   "random_baseline": 0.125,
-  "note": "Quick CPU checkpoint trained on a tiny RAVDESS subset to make the app run end-to-end. Re-run on GPU with LoRA for stronger numbers."
+  "note": "LoRA fine-tuned on RAVDESS subset."
 }
