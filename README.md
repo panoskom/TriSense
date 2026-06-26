@@ -40,9 +40,17 @@ the box with no setup.
 
 ## Quick start (the only command you need)
 
+Clone the repo and bring everything up with one command:
+
 ```bash
+git clone https://github.com/panoskom/TriSense.git
+cd TriSense
 docker compose up --build
 ```
+
+The trained model ships inside the repo (`checkpoints/trisense.pt`, about 11 MB), so there
+is nothing to train first. The build needs internet once, to fetch the base encoders and
+dependencies; after that the app runs offline on CPU.
 
 Then open:
 
