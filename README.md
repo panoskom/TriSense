@@ -20,6 +20,10 @@ trained checkpoint, so it works out of the box.
 > their attention layers, jointly with the classifier heads. This is cheap, fast, and
 > produces a checkpoint of just a few MB. See [The method: LoRA](#the-method-lora-is-the-centerpiece).
 
+<p align="center">
+  <img src="docs/architecture.svg" alt="TriSense architecture: an input clip is encoded by three modality branches — CLIP (LoRA) for video, wav2vec2 (LoRA) for audio, and a frozen Whisper-tiny→MiniLM text branch — whose embeddings are concatenated and passed through a fusion MLP to predict one of 8 emotions, with per-modality heads and leave-one-out explainability." width="100%">
+</p>
+
 ---
 
 ## Quick start (the only command you need)
@@ -106,17 +110,10 @@ CPU path (`make train`) is still there for a no-GPU end-to-end run.
 
 ## Architecture
 
-```
-        ┌─────────── frame sampling ──────────┐
-clip ──►│ CLIP vision (+LoRA) → mean → 512-d   │─┐
-        └─────────────────────────────────────┘ │   ┌── video head → 8
-        ┌─────────── waveform ────────────────┐  ├──►│   audio head → 8
-clip ──►│ wav2vec2 (+LoRA) → mean-pool → 768-d │──┤   │   text head  → 8
-        └─────────────────────────────────────┘  │   └── fusion MLP(512+768+384) → 8  ← final
-        ┌─ Whisper-tiny → text → MiniLM 384-d ─┐  │
-clip ──►│              (frozen)                │──┘
-        └─────────────────────────────────────┘
-```
+The [diagram above](#trisense--tri-modal-emotion-recognition-with-lora-fine-tuning) shows the
+full data flow: a clip is encoded by three modality branches, their embeddings are concatenated
+and fused into one prediction, and every modality also keeps its own head for the per-modality
+predictions and leave-one-out explainability. Code layout:
 
 ```
 backend/app/
