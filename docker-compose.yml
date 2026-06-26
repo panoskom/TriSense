@@ -1,0 +1,29 @@
+# TriSense — one command to run the whole thing:
+#   docker compose up --build
+# Then open http://localhost:8000 (app) and http://localhost:5000 (MLflow).
+# Everything runs on CPU; no GPU, no API keys, no internet at run time.
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: trisense-app
+    ports:
+      - "8000:8000"
+    environment:
+      TRISENSE_DEVICE: cpu
+    restart: unless-stopped
+
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:v2.19.0
+    command: >
+      mlflow ui
+      --backend-store-uri file:///mlruns
+      --host 0.0.0.0
+      --port 5000
+    ports:
+      - "5000:5000"
+    volumes:
+      # Training (run locally, outside Docker) logs here; the UI reads it.
+      - ./mlruns:/mlruns
+    restart: unless-stopped

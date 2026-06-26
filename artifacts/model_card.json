@@ -1,0 +1,110 @@
+{
+  "checkpoint": "trisense.pt",
+  "trained_on": "RAVDESS speech AV subset \u2014 224 train / 48 val / 48 test clips, 8 emotions.",
+  "device": "cpu",
+  "num_test_clips": 48,
+  "test_accuracy": 0.7917,
+  "macro_f1": 0.7832,
+  "per_modality_accuracy": {
+    "video": 0.75,
+    "audio": 0.3542,
+    "text": 0.0208
+  },
+  "confusion_matrix": {
+    "labels": [
+      "neutral",
+      "calm",
+      "happy",
+      "sad",
+      "angry",
+      "fearful",
+      "disgust",
+      "surprised"
+    ],
+    "matrix": [
+      [
+        6,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        6,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        6,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        6
+      ]
+    ]
+  },
+  "confusion_matrix_image": "/api/artifacts/confusion_matrix.png",
+  "random_baseline": 0.125,
+  "note": "Quick CPU checkpoint trained on a tiny RAVDESS subset to make the app run end-to-end. Re-run on GPU with LoRA for stronger numbers."
+}

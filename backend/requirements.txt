@@ -1,0 +1,25 @@
+# TriSense backend runtime dependencies (CPU-only, pinned).
+# Install torch from the CPU wheel index, e.g.:
+#   pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cpu
+
+# --- Web framework ---
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+pydantic==2.10.4
+pydantic-settings==2.7.1
+
+# --- Deep learning (CPU) ---
+torch==2.5.1
+transformers==4.46.3
+peft==0.13.2
+sentence-transformers==3.3.1
+safetensors==0.4.5
+
+# --- Media / feature extraction ---
+opencv-python-headless==4.10.0.84
+imageio-ffmpeg==0.5.1
+librosa==0.10.2.post1
+soundfile==0.12.1
+pillow==11.0.0
+numpy==1.26.4

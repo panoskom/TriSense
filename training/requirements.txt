@@ -1,0 +1,22 @@
+# TriSense training dependencies.
+# For the quick CPU checkpoint (phase one) install torch from the CPU index:
+#   pip install -r training/requirements.txt --extra-index-url https://download.pytorch.org/whl/cpu
+# For the real GPU run (phase two) install the CUDA build of torch instead — see README "Training".
+
+# Everything the backend needs at inference time:
+-r ../backend/requirements.txt
+
+# --- MLOps / experiment tracking ---
+mlflow==2.19.0
+
+# --- Metrics & plotting ---
+scikit-learn==1.5.2
+matplotlib==3.9.3
+
+# --- Data download & utilities ---
+requests==2.32.3
+tqdm==4.67.1
+
+# --- Testing ---
+pytest==8.3.4
+httpx==0.28.1

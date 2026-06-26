@@ -1,0 +1,14 @@
+[project]
+name = "trisense"
+version = "1.0.0"
+description = "Tri-modal (video + audio + text) emotion recognition with LoRA fine-tuning."
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["backend/tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"

@@ -1,0 +1,40 @@
+# Data — never commit the raw dataset
+data/
+!data/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# MLflow local store
+mlruns/
+mlartifacts/
+
+# Hugging Face / model caches (baked into image, not committed)
+.hf_cache/
+models_cache/
+
+# Node / frontend
+node_modules/
+frontend/dist/
+
+# Training scratch
+training/runs/
+*.log
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Keep the small trained checkpoint (committed on purpose) — do NOT ignore checkpoints/
+
+# Internal build spec / tooling (not part of the project)
+prompt.txt
+.omc/
+scratchpad/
