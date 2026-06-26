@@ -15,7 +15,7 @@
   <rect x="8" y="8" width="1304" height="644" rx="20" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
 
   <!-- header -->
-  <text x="40" y="50" font-size="23" font-weight="700" fill="#0f172a">TriSense &#8212; tri-modal emotion recognition</text>
+  <text x="40" y="50" font-size="23" font-weight="700" fill="#0f172a">TriSense: tri-modal emotion recognition</text>
   <text x="40" y="78" font-size="14.5" fill="#64748b">One short clip in &#8594; three modalities encoded (LoRA-adapted) &#8594; fused &#8594; one emotion out.</text>
 
   <!-- ============ INPUT ============ -->

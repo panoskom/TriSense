@@ -33,10 +33,11 @@ train:
 	$(PYTHON) training/train.py --device cpu --epochs 15 --batch-size 16 --lr 1e-3 --run-name phase1-cpu-frozen
 
 # Real run: LoRA on both encoders, GPU, mixed precision (phase two).
+# These match the committed checkpoint (84.7% test accuracy on a 20-actor subset).
 train-gpu:
 	$(PYTHON) training/train.py --device cuda --amp \
-		--lora-video --lora-audio --lora-rank 8 --lora-alpha 16 \
-		--epochs 8 --batch-size 24 --lr 2e-4 --run-name gpu-lora-both
+		--lora-video --lora-audio --lora-rank 16 --lora-alpha 32 \
+		--epochs 15 --batch-size 24 --lr 2e-4 --run-name gpu-lora-both
 
 evaluate:
 	$(PYTHON) training/evaluate.py --device $(DEVICE)
